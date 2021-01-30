@@ -58,9 +58,13 @@ To start detecting, follow the steps below
         ```
     - After the code runs, you will find a new image in `images/fedex_new.jpg` with the detection visualized, with the following results printed in the Terminal/Console.
 
-        ```JSON
+        ```
         {'success': True, 
-        'predictions': [{'confidence': 0.8304351, 'label': 'fedex', 'y_min': 135, 'x_min': 385, 'y_max': 183, 'x_max': 524}, {'confidence': 0.8715514, 'label': 'fedex', 'y_min': 138, 'x_min': 278, 'y_max': 226, 'x_max': 352}]}
+            'predictions': [
+                {'confidence': 0.8304351, 'label': 'fedex', 'y_min': 135, 'x_min': 385, 'y_max': 183, 'x_max': 524}, 
+                {'confidence': 0.8715514, 'label': 'fedex', 'y_min': 138, 'x_min': 278, 'y_max': 226, 'x_max': 352}
+                ]
+        }
         ```
 
         ![](images/fedex_detected.jpg)
