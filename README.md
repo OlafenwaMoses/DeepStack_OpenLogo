@@ -47,9 +47,9 @@ To start detecting, follow the steps below
 
     ![](images/fedex.jpg)
 
-    - Install Python and install two Python dependencies via the commands below
+    - Install Python and install the **DeepStack Python SDK** via the command below
         ```bash
-        pip install pillow opencv-python
+        pip install deepstack_sdk
         ```
     - Run the Python file `detect.py` in this repository.
 
@@ -59,12 +59,20 @@ To start detecting, follow the steps below
     - After the code runs, you will find a new image in `images/fedex_new.jpg` with the detection visualized, with the following results printed in the Terminal/Console.
 
         ```
-        {'success': True, 
-            'predictions': [
-                {'confidence': 0.8304351, 'label': 'fedex', 'y_min': 135, 'x_min': 385, 'y_max': 183, 'x_max': 524}, 
-                {'confidence': 0.8715514, 'label': 'fedex', 'y_min': 138, 'x_min': 278, 'y_max': 226, 'x_max': 352}
-                ]
-        }
+        Name: fedex
+        Confidence: 0.83026457
+        x_min: 385
+        x_max: 524
+        y_min: 135
+        y_max: 183
+        -----------------------
+        Name: fedex
+        Confidence: 0.8716001
+        x_min: 278
+        x_max: 352
+        y_min: 138
+        y_max: 226
+        -----------------------
         ```
 
         ![](images/fedex_detected.jpg)
