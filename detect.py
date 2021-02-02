@@ -1,7 +1,7 @@
 from deepstack_sdk import Detection,ServerConfig
 import os
 
-config = ServerConfig("http://localhost:82")
+config = ServerConfig("http://localhost:80")
 detector = Detection(config=config, name="openlogo")
 
 detections = detector.detectObject(image=os.path.join("images", "fedex.jpg"), output=os.path.join("images", "fedex_new.jpg"))
